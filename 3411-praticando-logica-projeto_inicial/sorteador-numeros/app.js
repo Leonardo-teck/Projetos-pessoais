@@ -3,6 +3,18 @@ function sortear(){
     let de = parseInt(document.getElementById('de').value); //parseInt é para receber apenas numeros
     let ate =parseInt(document.getElementById('ate').value); //.value é para puxar o valor
 
+        if (de >= ate) {
+            document.getElementById('resultado').innerHTML = '<label class="texto__paragrafo">Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!</label>';
+            alterarStatusBotao();
+            return;
+          }
+
+          if (quantidade > (ate - de + 1 )) {
+             document.getElementById('resultado').innerHTML = '<label class="texto__paragrafo">"Campo "Quantidade" deve ser menor ou igual ao intervalo informado no campo "Do número" até o campo "Até o número". Verifique!</label>';
+             alterarStatusBotao();
+             return;
+          }
+
     let sorteados = [];
     let numero;
 
@@ -31,7 +43,7 @@ function alterarStatusBotao(){
     }else{
         botao.classList.remove('container__botao');
         botao.classList.add('container__botao-desabilitado');
-    }
+    }           
 }
 
 function reiniciar(){
