@@ -1,0 +1,29 @@
+Manipulação do DOM (Document Object Model)
+document.getElementById("id") → //Seleciona um elemento HTML pelo seu ID.
+document.querySelector(".classe") → //Seleciona o primeiro elemento que corresponde a um seletor CSS específico.
+document.querySelectorAll(".classe") → //Seleciona todos os elementos que correspondem ao seletor CSS.
+element.textContent → //Obtém ou define o conteúdo de texto de um elemento.
+element.innerHTML → //Obtém ou define o conteúdo HTML interno de um elemento.
+
+🎛 Eventos
+element.addEventListener("click", função) → //Adiciona um evento de clique a um elemento.
+document.addEventListener("DOMContentLoaded", função) → //Executa um código quando a página é completamente carregada.
+
+🔢 Conversão de Valores
+parseInt(valor) → //Converte um valor para um número inteiro.
+
+🎲 Geração de Números Aleatórios
+Math.random() → //Retorna um número decimal aleatório entre 0 e 1.
+Math.floor(numero) →//Arredonda um número para baixo.
+Math.random() * (max - min + 1) + min → //Gera um número aleatório dentro de um intervalo específico.
+
+📋 Manipulação de Arrays
+array.push(valor) → //Adiciona um elemento ao final do array.
+array.includes(valor) → //Verifica se um valor já está presente no array.
+array.length → //Retorna a quantidade de elementos no array.
+for (let i = 0; i < array.length; i++) → //Estrutura de repetição para percorrer um array.
+
+🔄 Manipulação de Classes CSS
+element.classList.add("classe") → //Adiciona uma classe a um elemento.
+element.classList.remove("classe") → //Remove uma classe de um elemento.
+element.classList.contains("classe") → //Verifica se o elemento possui uma classe específica.
