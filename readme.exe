@@ -6,8 +6,8 @@ element.textContent → //Obtém ou define o conteúdo de texto de um elemento.
 element.innerHTML → //Obtém ou define o conteúdo HTML interno de um elemento.
 
 🎛 Eventos
-element.addEventListener("click", função) → //Adiciona um evento de clique a um elemento.
-document.addEventListener("DOMContentLoaded", função) → //Executa um código quando a página é completamente carregada.
+element.addEventListener("click", function()){} → //Adiciona um evento de clique a um elemento.
+document.addEventListener("DOMContentLoaded", function()){} → //Executa um código quando a página é completamente carregada.
 
 🔢 Conversão de Valores
 parseInt(valor) → //Converte um valor para um número inteiro.

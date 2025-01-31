@@ -6,7 +6,7 @@ function contarEExibirJogosAlugados() { // a função responsavel por mostrar os
 
 function alterarStatus(id) {
     let gameClicado = document.getElementById(`game-${id}`);
-    let imagem = gameClicado.querySelector('.dashboard__item__img');
+    let imagem = gameClicado.querySelector('.dashboard__item__img'); //Usa a variavel gameClicado. no lugar de document.
     let botao = gameClicado.querySelector('.dashboard__item__button');
 
     if (imagem.classList.contains('dashboard__item__img--rented')) {
