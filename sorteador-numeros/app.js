@@ -19,7 +19,7 @@ function sortear(){
     let numero;
 
     for (let i = 0; i < quantidade; i++) {//let i = 0: Inicializa a variável i com 0, que será usada como contador no laço.
-        let numero = obterNumeroAleatorio(de, ate);// o de e ate são os paremetros 
+        numero = obterNumeroAleatorio(de, ate);// o de e ate são os paremetros 
 
         while (sorteados.includes(numero)) {
             numero = obterNumeroAleatorio(de, ate);
